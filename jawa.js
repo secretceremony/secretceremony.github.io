@@ -1,9 +1,6 @@
-// please do not use my source code without my permission, I put a lot of effort into it and please do let me know if you want to clone it, use it for your project, I begggg
-
 const questions = [
     {
-        question: "Q1/12: You're taking the bus on your way back home. It's been a loooong day, what are you thinking about?",
-        image: "images/Q1.gif",
+        question: "1.) You're taking the bus on your way back home. It's been a loooong day, what are you thinking about?",
         answers: {
             F: {
                 text: "I'm just so tired and can't wait to go home. Why does everyday feel the same...",
@@ -16,8 +13,7 @@ const questions = [
         },
     },
     {
-        question: "Q2/12: You look outside the windows, seems like it's going to rain soon. Suddenly everything turns into darkness!!",
-        image: "images/Q2.gif",
+        question: "2.) You look outside the windows, seems like it's going to rain soon. Suddenly everything turns into darkness!!",
         answers: {
             J: {
                 text: "I don't remember this tunnel. *Pull out your phone to look at the map*",
@@ -30,8 +26,7 @@ const questions = [
         },
     },
     {
-        question: "Q3/12: Before you can do anything, the bus stops and everything around you floats up!",
-        image: "images/Q3.gif",
+        question: "3.): Before you can do anything, the bus stops and everything around you floats up!",
         answers: {
             S: {
                 text: "Ok this is weird, am I dreaming? *pinch your arm*",
@@ -44,8 +39,7 @@ const questions = [
         },
     },
     {
-        question: "Q4/12: Amidst the surprise, your eyes catch something drifting past the window.",
-        image: "images/Q4.gif",
+        question: "4.): Amidst the surprise, your eyes catch something drifting past the window.",
         answers: {
             F: {
                 text: "Woahhh...so many cats! How cute!! I wanna give them a hug!",
@@ -58,8 +52,7 @@ const questions = [
         },
     },
     {
-        question: "Q5/12: 'Welcome Aboard!' a small robot appears and announces, 'We will reach our destination in 5 months 6 days and 2 hours!'",
-        image: "images/Q5.gif",
+        question: "5.): 'Welcome Aboard!' a small robot appears and announces, 'We will reach our destination in 5 months 6 days and 2 hours!'",
         answers: {
             P: {
                 text: "Cool! A space cruise?! Where are we going? Do I get a spacesuit? This is so exciting!",
@@ -72,8 +65,7 @@ const questions = [
         },
     },
     {
-        question: "Q6/12: The robot just points to the back of the bus which now looks more like inside of a spaceship! What do you want to see first?",
-        image: "images/Q6.gif",
+        question: "6.): The robot just points to the back of the bus which now looks more like inside of a spaceship! What do you want to see first?",
         answers: {
             I: {
                 text: "Solar system themed fountain in the middle. I want to take pictures with it.",
@@ -86,8 +78,7 @@ const questions = [
         },
     },
     {
-        question: "Q7/12: On the way back to your seat, you are surrounded by cats! 'Unauthorized passenger detected, CAPTURE CAPTURE!'",
-        image: "images/Q7.gif",
+        question: "7.) On the way back to your seat, you are surrounded by cats! 'Unauthorized passenger detected, CAPTURE CAPTURE!'",
         answers: {
             S: {
                 text: "Woah! What do you mean unauthorized? I'm the passenger of this cruise!",
@@ -100,8 +91,7 @@ const questions = [
         },
     },
     {
-        question: "Q8/12: Suddenly, the robot glides in, it whispers something to the cats that makes them stop.",
-        image: "images/Q8.gif",
+        question: "8.) Suddenly, the robot glides in, it whispers something to the cats that makes them stop.",
         answers: {
             E: {
                 text: "Bob!! Thank you! You come to save me, right?",
@@ -114,8 +104,7 @@ const questions = [
         },
     },
     {
-        question: "Q9/12: The robot transforms into a giant vacuum cleaner, the cats use it to point at you!",
-        image: "images/Q9.gif",
+        question: "9.) The robot transforms into a giant vacuum cleaner, the cats use it to point at you!",
         answers: {
             J: {
                 text: "Throw your coat at them as distraction, run towards the big green 'EXIT' sign!",
@@ -128,8 +117,7 @@ const questions = [
         },
     },
     {
-        question: "Q10/12: You run past the gift shop. Looks like you got rid of them. It wouldn't hurt to get some souvenirs, right?",
-        image: "images/Q10.gif",
+        question: "10.) You run past the gift shop. Looks like you got rid of them. It wouldn't hurt to get some souvenirs, right?",
         answers: {
             F: {
                 text: "Get the Jupiter headphone, wear it to hear people's thoughts!",
@@ -143,8 +131,7 @@ const questions = [
 
     },
     {
-        question: "Q11/12: The giant vacuum cleaner suddenly emerges in front of you! You're sucked into its vortex!!!",
-        image: "images/Q11.gif",
+        question: "11.) The giant vacuum cleaner suddenly emerges in front of you! You're sucked into its vortex!!!",
         answers: {
             S: {
                 text: "It's ok, this is just a dream! I'll wake up soon! *close your eyes and give up*",
@@ -157,8 +144,7 @@ const questions = [
         },
     },
     {
-        question: "Q12/12: After a moment of darkness, you find yourself back in the bus. 'Are you alright?' the ticket inspector asks",
-        image: "images/Q12.gif",
+        question: "12.) After a moment of darkness, you find yourself back in the bus. 'Are you alright?' the ticket inspector asks",
         answers: {
             I: {
                 text: "Woah! I thought I was captured... Nevermind! I'm alright now, I guess? *panic in silence*",
@@ -172,7 +158,6 @@ const questions = [
     },
     {
         question: "When you look up again, the inspector's already gone. You glance outside the window, darkness creeps in as the bus enters another tunnel...",
-        image: "images/Q13.gif",
         answers: {
             K: {
                 text: "Wait...was that Bob?",
@@ -184,7 +169,7 @@ const questions = [
     },
 ];
 
-const resultOptions = {
+const selesaiOptions = {
     "ISTJ": {
         image: "1DE.png",
     },
@@ -244,12 +229,9 @@ function displayQuestion() {
     const quizElement = document.getElementById('quiz');
     const question = questions[currentQuestion];
     if (question) {
-        let html = `<p>${question.question}</p>`;
-        if (question.image) {
-            html += `<img src="${question.image}" alt="Question ${currentQuestion + 1}">`;
-        }
+        let html = `<h1>${question.question}</h1>`;
         for (const option in question.answers) {
-            html += `<button class="large-rectangular" value="${option}" id="${option}">${question.answers[option].text}</button>`;
+            html += `<button class="btn-rounded-big" value="${option}" id="${option}">${question.answers[option].text}</button>`;
         }
         quizElement.innerHTML = html;
         attachButtonClickHandlers();
@@ -259,9 +241,9 @@ function displayQuestion() {
 }
 
 
-document.getElementById('start-button').addEventListener('click', function() {
-    document.getElementById('start-page').style.display = 'none';
-    document.getElementById('quiz-page').style.display = 'block';
+document.getElementById('start').addEventListener('click', function() {
+    document.getElementById('main-menu').style.display = 'none';
+    document.getElementById('mulai').style.display = 'block';
     currentQuestion = 0;
     userAnswers = {};
     displayQuestion(); 
@@ -271,7 +253,7 @@ document.getElementById('start-button').addEventListener('click', function() {
 
 //click
 function attachButtonClickHandlers() {
-    const choiceButtons = document.querySelectorAll('.large-rectangular');
+    const choiceButtons = document.querySelectorAll('.btn-rounded');
     choiceButtons.forEach((button) => {
         button.addEventListener('click', handleAnswer);
     });
@@ -313,9 +295,9 @@ function handleAnswer(event) {
 
 
 function showResult() {
-    const resultElement = document.getElementById('result');
-    const resultTextContainer = document.querySelector('.result-text');
-    const resultImage = document.getElementById('result-image');
+    const selesaiElement = document.getElementById('selesai');
+    const selesaiTextContainer = document.querySelector('.selesai-text');
+    const selesaiImage = document.getElementById('selesai-image');
     const topLetters = {};
 
     const pairs = ["IE", "NS", "TF", "PJ"];
@@ -328,22 +310,22 @@ function showResult() {
     });
 
     //each pair
-    const result = pairs.map(pair => topLetters[pair]).join('');
+    const selesai = pairs.map(pair => topLetters[pair]).join('');
 
-    //show result
-    const personalityData = resultOptions[result];
+    //show selesai
+    const personalityData = selesaiOptions[selesai];
     if (personalityData) {
-        resultTextContainer.innerHTML = `
+        selesaiTextContainer.innerHTML = `
         `;
 
-        resultImage.src = "images/"+personalityData.image;
-        resultImage.alt = `${personalityData.image} Image`;
+        selesaiImage.src = "images/"+personalityData.image;
+        selesaiImage.alt = `${personalityData.image} Image`;
     } else {
 
     }
 
     document.getElementById('quiz').style.display = 'none'; // Hide the quiz
-    document.getElementById('result').style.display = 'block'; // Show the result
+    document.getElementById('selesai').style.display = 'block'; // Show the selesai
     document.getElementById('restart-button').style.display = 'block'; // Show the restart button
 }
 
@@ -352,7 +334,7 @@ function showResult() {
 function restartQuiz() {
     currentQuestion = 0;
     userAnswers = {};
-    document.getElementById('result').style.display = 'none';
+    document.getElementById('selesai').style.display = 'none';
     document.getElementById('quiz').style.display = 'block';
     displayQuestion(); // Start the quiz from the beginning
 }

@@ -31,9 +31,6 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.btn-gradient {
     background: #7469B6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #7469B6, #AD88C6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #7469B6, #AD88C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -44,4 +41,51 @@ body {
 .btn-rounded:hover {
     color: #ffffff;
     transform: translateY(4px);
+}
+
+.btn-rounded-big {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 17px;
+    height: 100px;
+    width: 180px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #7469B6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7469B6, #AD88C6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7469B6, #AD88C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-rounded-big:hover {
+    color: #ffffff;
+    transform: translateY(4px);
+}
+
+#result {
+    /*margin-top: 20px;*/
+    padding: 10px;
+    background-color: #FFE6E6;
+    /*border: 2px solid #ddd;
+    border-radius: 5px;*/
+    display: none;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 400px; /* Set max-width to 400px */
+}
+
+
+#quiz p{
+    font-size: 22px;
+    margin: 10px 0;
+
+}
+#result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#quiz {
+    /* Add your other styles here */
+    font-size: 18px;
 }
