@@ -1,0 +1,111 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    background-color: #FFE6E6;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    
+}
+
+.startPage {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #413c64;
+    padding: 20px;
+    justify-content: center;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 700px;
+}
+
+.startAbout {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #413c64;
+    padding: 20px;
+    justify-content: center;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 700px;
+}
+
+
+.button {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 17px;
+    height: 50px;
+    width: 90px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #7469B6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7469B6, #AD88C6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7469B6, #AD88C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.button:hover {
+    color: #ffffff;
+    transform: translateY(4px);
+}
+
+.button-big {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 17px;
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #7469B6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7469B6, #AD88C6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7469B6, #AD88C6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.button-big:hover {
+    color: #ffffff;
+    transform: translateY(4px);
+}
+
+.quizPage {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #413c64;
+    padding: 20px;
+    justify-content: center;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 700px;
+}
+
+.resultPage {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #413c64;
+    padding: 20px;
+    justify-content: center;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 700px;
+}
+
+.resultPage img {
+    max-width: 360px;
+    height: auto;
+    align-items: center;
+    margin: 4px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
