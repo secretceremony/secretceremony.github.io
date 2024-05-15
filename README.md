@@ -1,8 +1,5 @@
 # tubespemstruk
-ini buat tubes, frontendnya udah bisa dibilang selesai sih, tinggal backendnya aja
-
-tolong ditambahkan quiznya ya, asset gambarnya menyusul..
-
+ini buat tubes
 bagian inpo itu sebenarnya for fun aja sih, boleh ditambah/dikurangi QnA-nya LOL
 mau dihapus juga boleh
 
