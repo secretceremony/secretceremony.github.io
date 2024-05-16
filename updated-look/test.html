@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Multiple Choice Quiz</h2>
+        <form id="quiz-form">
+            <div id="questions-container">
+                <div class="question" id="question-template" style="display: none;">
+                    <p class="question-text"></p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="" value="a"> <span class="option-text">Option A</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="" value="b"> <span class="option-text">Option B</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="" value="c"> <span class="option-text">Option C</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="" value="d"> <span class="option-text">Option D</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="prev-button" style="display: none;">Previous</button>
+            <button type="button" id="next-button">Next</button>
+            <button type="submit" id="submit-button" style="display: none;">Submit</button>
+        </form>
+    </div>
+    <script src="scripttest.js"></script>
+</body>
+</html>
